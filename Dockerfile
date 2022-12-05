@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 
 RUN apt-get update && \
-    apt-get install -y python python-pip cron curl && \
+    apt-get install -y --force-yes python python-pip cron curl && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install s3cmd
