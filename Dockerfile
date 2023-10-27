@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:bookworm-20231009
 MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 
 RUN apt-get update && \
